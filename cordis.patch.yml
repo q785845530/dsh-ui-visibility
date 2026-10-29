@@ -1,0 +1,6 @@
+# dsh-ui-visibility 的 profile 装配入口（dsh.bundle.patch 指向本文件）。
+# 纯前端插件：host 半不做任何事，client 半注册一个「设置 → 界面管理」分区，
+# 并注入 CSS 把用户取消勾选的条目藏起来。
+- insert:
+    - id: dsh-ui-visibility
+      name: 'dsh-ui-visibility'

@@ -1,0 +1,19 @@
+{
+  "name": "dsh-ui-visibility",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "界面管理：把侧边栏条目与设置分区按需显示/隐藏（不改插件本身，只改可见性）",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": { "inject": [], "platform": "web" },
+    "bundle": { "patch": "./cordis.patch.yml" }
+  },
+  "files": ["lib", "cordis.patch.yml", "README.md"],
+  "engines": { "dsh": ">=0.1.0 <1" },
+  "license": "MIT"
+}
